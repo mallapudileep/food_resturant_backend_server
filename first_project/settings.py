@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$tmr-*&k%x6db-8f3&7-2#o##rv0%zf=l^m#%fsh56s!y99&_w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.onrender.com']
+ALLOWED_HOSTS = ['.onrender.com','https://food-court-woad-nine.vercel.app/']
 
 
 # Application definition
@@ -126,4 +126,4 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS=['http://localhost:5173','https://food-court-woad-nine.vercel.app/']
+CORS_ALLOWED_ORIGINS=['http://localhost:5173']
