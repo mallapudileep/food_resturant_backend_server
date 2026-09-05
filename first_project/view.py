@@ -18,8 +18,6 @@ def home_page(self):
     return HttpResponse('this is home page')
 def server_page(self):
     return HttpResponse('this is the server page')
-def default_page(self):
-    return HttpResponse('this is the default page')
 def all(self):
     return HttpResponse('this is page of all') #this is the http response we are given in the url path
 

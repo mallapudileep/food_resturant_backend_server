@@ -24,7 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/',view.home_page),
     path('service/',view.server_page),
-    path('',view.default_page),
     path('flip/',view.flip_page),
     path('all/',view.all),
     path('your/',view.your),
