@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Movies List</h1>
+        {%for each in name%}
+        <h2>{{each.movie}}</h2>
+        <h2>{{each.releasedDate}}</h2>
+        <h2>{{each.rating}}</h2>
+        <h2>{{each.hero}}</h2>
+        <hr/>
+        {%endfor%}
+    </div>
+
+
+</body>
+</html>

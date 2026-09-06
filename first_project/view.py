@@ -11,6 +11,109 @@ def home_page(request):
     else:
         return render(request,'pagenotfound.html')
 
+def movie(self):
+    return JsonResponse({
+  "users": [ { "id": 1, "name": "Baahubali: The Beginning", "image": "https://placehold.co/300x450?text=Baahubali", "releasedDate": "10 July 2015", "rating": "8.0", "hero": "Prabhas" }, { "id": 2, "name": "Pushpa: The Rise", "image": "https://placehold.co/300x450?text=Pushpa", "releasedDate": "17 December 2021", "rating": "7.6", "hero": "Allu Arjun" }, { "id": 3, "name": "RRR", "image": "https://placehold.co/300x450?text=RRR", "releasedDate": "25 March 2022", "rating": "7.8", "hero": "Ram Charan" }, { "id": 4, "name": "Pokiri", "image": "https://placehold.co/300x450?text=Pokiri", "releasedDate": "28 April 2006", "rating": "8.0", "hero": "Mahesh Babu" }, { "id": 5, "name": "Jalsa", "image": "https://placehold.co/300x450?text=Jalsa", "releasedDate": "2 April 2008", "rating": "7.4", "hero": "Pawan Kalyan" }, { "id": 6, "name": "Devara: Part 1", "image": "https://placehold.co/300x450?text=Devara", "releasedDate": "27 September 2024", "rating": "6.5", "hero": "Jr NTR" }, { "id": 7, "name": "Fidaa", "image": "https://placehold.co/300x450?text=Fidaa", "releasedDate": "21 July 2017", "rating": "7.4", "hero": "Varun Tej" }, { "id": 8, "name": "Jersey", "image": "https://placehold.co/300x450?text=Jersey", "releasedDate": "19 April 2019", "rating": "8.5", "hero": "Nani" }, { "id": 9, "name": "Arjun Reddy", "image": "https://placehold.co/300x450?text=Arjun+Reddy", "releasedDate": "25 August 2017", "rating": "8.1", "hero": "Vijay Deverakonda" }, { "id": 10, "name": "Drishyam", "image": "https://placehold.co/300x450?text=Drishyam", "releasedDate": "3 July 2015", "rating": "8.2", "hero": "Venkatesh" }, { "id": 11, "name": "Karthikeya 2", "image": "https://placehold.co/300x450?text=Karthikeya+2", "releasedDate": "13 August 2022", "rating": "7.9", "hero": "Nikhil Siddhartha" }, { "id": 12, "name": "Major", "image": "https://placehold.co/300x450?text=Major", "releasedDate": "3 June 2022", "rating": "8.1", "hero": "Adivi Sesh" }, { "id": 13, "name": "Goodachari", "image": "https://placehold.co/300x450?text=Goodachari", "releasedDate": "3 August 2018", "rating": "7.8", "hero": "Adivi Sesh" }, { "id": 14, "name": "Salaar", "image": "https://placehold.co/300x450?text=Salaar", "releasedDate": "22 December 2023", "rating": "6.5", "hero": "Prabhas" }, { "id": 15, "name": "Rangasthalam", "image": "https://placehold.co/300x450?text=Rangasthalam", "releasedDate": "30 March 2018", "rating": "8.2", "hero": "Ram Charan" }, { "id": 16, "name": "Ala Vaikunthapurramuloo", "image": "https://placehold.co/300x450?text=Ala+Vaikunthapurramuloo", "releasedDate": "12 January 2020", "rating": "7.3", "hero": "Allu Arjun" }, { "id": 17, "name": "Athadu", "image": "https://placehold.co/300x450?text=Athadu", "releasedDate": "10 August 2005", "rating": "8.2", "hero": "Mahesh Babu" }, { "id": 18, "name": "Thammudu", "image": "https://placehold.co/300x450?text=Thammudu", "releasedDate": "15 July 1999", "rating": "7.9", "hero": "Pawan Kalyan" }, { "id": 19, "name": "Eega", "image": "https://placehold.co/300x450?text=Eega", "releasedDate": "6 July 2012", "rating": "7.7", "hero": "Nani" }, { "id": 20, "name": "Dasara", "image": "https://placehold.co/300x450?text=Dasara", "releasedDate": "30 March 2023", "rating": "7.6", "hero": "Nani" }, { "id": 21, "name": "Bimbisara", "image": "https://placehold.co/300x450?text=Bimbisara", "releasedDate": "5 August 2022", "rating": "6.4", "hero": "Kalyan Ram" }, { "id": 22, "name": "Agent", "image": "https://placehold.co/300x450?text=Agent", "releasedDate": "28 April 2023", "rating": "3.7", "hero": "Akhil Akkineni" }, { "id": 23, "name": "Kushi", "image": "https://placehold.co/300x450?text=Kushi", "releasedDate": "1 September 2023", "rating": "5.4", "hero": "Vijay Deverakonda" }, { "id": 24, "name": "DJ Tillu", "image": "https://placehold.co/300x450?text=DJ+Tillu", "releasedDate": "12 February 2022", "rating": "7.1", "hero": "Siddhu Jonnalagadda" }, { "id": 25, "name": "Brochevarevarura", "image": "https://placehold.co/300x450?text=Brochevarevarura", "releasedDate": "28 June 2019", "rating": "8.0", "hero": "Sree Vishnu" }, { "id": 26, "name": "Republic", "image": "https://placehold.co/300x450?text=Republic", "releasedDate": "1 October 2021", "rating": "7.7", "hero": "Sai Dharam Tej" }, { "id": 27, "name": "Kantara", "image": "https://placehold.co/300x450?text=Kantara", "releasedDate": "30 September 2022", "rating": "8.2", "hero": "Rishab Shetty" }, { "id": 28, "name": "Vikram", "image": "https://placehold.co/300x450?text=Vikram", "releasedDate": "3 June 2022", "rating": "8.3", "hero": "Kamal Haasan" }, { "id": 29, "name": "Leo", "image": "https://placehold.co/300x450?text=Leo", "releasedDate": "19 October 2023", "rating": "7.2", "hero": "Vijay" }, { "id": 30, "name": "Jailer", "image": "https://placehold.co/300x450?text=Jailer", "releasedDate": "10 August 2023", "rating": "7.1", "hero": "Rajinikanth" } ] })
+
+def std(req):
+  return render(req,'student.html',{'name':[ {
+    "movie": "Pushpa: The Rise",
+    "image": "pushpa-the-rise.jpg",
+    "name": "Pushpa: The Rise",
+    "releasedDate": "17 December 2021",
+    "rating": "7.6",
+    "hero": "Allu Arjun"
+  },
+  {
+    "movie": "RRR",
+    "image": "rrr.jpg",
+    "name": "RRR",
+    "releasedDate": "25 March 2022",
+    "rating": "7.8",
+    "hero": "Ram Charan"
+  },
+  {
+    "movie": "Devara: Part 1",
+    "image": "devara.jpg",
+    "name": "Devara: Part 1",
+    "releasedDate": "27 September 2024",
+    "rating": "6.0",
+    "hero": "Jr NTR"
+  },
+  {
+    "movie": "Guntur Kaaram",
+    "image": "guntur-kaaram.jpg",
+    "name": "Guntur Kaaram",
+    "releasedDate": "12 January 2024",
+    "rating": "5.3",
+    "hero": "Mahesh Babu"
+  },
+  {
+    "movie": "Hi Nanna",
+    "image": "hi-nanna.jpg",
+    "name": "Hi Nanna",
+    "releasedDate": "7 December 2023",
+    "rating": "8.2",
+    "hero": "Nani"
+  },
+  {
+    "movie": "Bro",
+    "image": "bro.jpg",
+    "name": "Bro",
+    "releasedDate": "28 July 2023",
+    "rating": "5.1",
+    "hero": "Pawan Kalyan"
+  },
+  {
+    "movie": "Salaar: Part 1 - Ceasefire",
+    "image": "salaar.jpg",
+    "name": "Salaar: Part 1 - Ceasefire",
+    "releasedDate": "22 December 2023",
+    "rating": "6.7",
+    "hero": "Prabhas"
+  },
+  {
+    "movie": "Kalki 2898 AD",
+    "image": "kalki-2898-ad.jpg",
+    "name": "Kalki 2898 AD",
+    "releasedDate": "27 June 2024",
+    "rating": "7.0",
+    "hero": "Prabhas"
+  },
+  {
+    "movie": "Jersey",
+    "image": "jersey.jpg",
+    "name": "Jersey",
+    "releasedDate": "19 April 2019",
+    "rating": "8.5",
+    "hero": "Nani"
+  },
+  {
+    "movie": "Ala Vaikunthapurramuloo",
+    "image": "ala-vaikunthapurramuloo.jpg",
+    "name": "Ala Vaikunthapurramuloo",
+    "releasedDate": "12 January 2020",
+    "rating": "7.3",
+    "hero": "Allu Arjun"
+  },
+  {
+    "movie": "Bharat Ane Nenu",
+    "image": "bharat-ane-nenu.jpg",
+    "name": "Bharat Ane Nenu",
+    "releasedDate": "20 April 2018",
+    "rating": "7.5",
+    "hero": "Mahesh Babu"
+  },
+  {
+    "movie": "Rangasthalam",
+    "image": "rangasthalam.jpg",
+    "name": "Rangasthalam",
+    "releasedDate": "30 March 2018",
+    "rating": "8.4",
+    "hero": "Ram Charan"
+  }]})
+
+
 def flip_page(req):
     return render(req,'index.html')
 

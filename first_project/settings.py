@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$tmr-*&k%x6db-8f3&7-2#o##rv0%zf=l^m#%fsh56s!y99&_w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.onrender.com']
+ALLOWED_HOSTS = ['.onrender.com','127.0.0.1'] #it is for backend server urls only 
 
 
 # Application definition
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'first_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'amazon'],#[BASE_DIR / 'flipkart' / 'templates'] -this is one way of using templates to access the html page -using path
+        'DIRS': [BASE_DIR / 'amazon',BASE_DIR/ 'first_project' / 'templates'],#[BASE_DIR / 'flipkart' / 'templates'] -this is one way of using templates to access the html page -using path
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,4 +126,4 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS=['http://localhost:5173','https://food-court-woad-nine.vercel.app/']
+CORS_ALLOWED_ORIGINS=['http://localhost:5173','https://food-court-woad-nine.vercel.app/','https://movie-frontend-topaz.vercel.app/'] #it is for front urls request

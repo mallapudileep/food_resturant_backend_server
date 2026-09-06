@@ -32,6 +32,8 @@ urlpatterns = [
     path('myntra',myn_view.clg),
     path('myn/',myn_view.clg),
     path('demo/',demo_view.model),
-    path('recipes/',view.recipe)
-]
+    path('recipes/',view.recipe),
+    path('std/',view.std),
+    path('movies/',view.movie)
+    ]
 
