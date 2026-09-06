@@ -126,4 +126,4 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CORS_ALLOWED_ORIGINS=['http://localhost:5173','https://food-court-woad-nine.vercel.app/','https://movie-frontend-topaz.vercel.app/'] #it is for front urls request
+CORS_ALLOWED_ORIGINS=['http://localhost:5173','https://movie-frontend-topaz.vercel.app/','https://food-court-woad-nine.vercel.app/',] #it is for front urls request
